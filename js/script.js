@@ -79,6 +79,8 @@ $("#surat-list").on('click','.surat', function() {
       if (result.code === 200) {
 
         $('#judul-surah').html(result.data[id-1].name.transliteration.id)
+        $('#ayat-surat').html('Ayat List')
+
         
       }else {
         console.log(result.status);
